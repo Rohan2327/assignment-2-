@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 3 Assignment 2</title>
+</head>
+<body>
+    <h3>Assignment 2 submission fizzbuzz program & palindrome program</h3>
+    <script>
+        
+ 
+//  Question 1
+// Fizz Buzz problem
+
+// FIzz BUzz Program  
+
+let n=100
+for(i=1;i<=n;i=i+1){
+let  a= i/15;
+let  b= i/5;
+let  c= i/3;
+  if (Number.isInteger(a)) {
+    console.log("fizzbuzz")
+  }
+  else if (Number.isInteger(b)) {
+    console.log("buzz")
+  }
+  else if (Number.isInteger(c)) {
+    console.log("fizz")
+  }
+  else{
+    console.log(i)
+  }
+}
+
+// Question 2
+// find palindrome words in a given string.
+
+
+//Palindrome program
+
+let a = "nayan is dad of civic "
+let a1 = "" 
+let a2 = ""
+  for (t of a) {
+    if (t != " ") {
+      a2 = a2 + t
+      a1 = t + a1
+    }
+    else {
+      if (a1 == a2) console.log(a1)
+      a1 = ""
+      a2 = ""
+    }
+  }
+    </script>
+</body>
+</html>
